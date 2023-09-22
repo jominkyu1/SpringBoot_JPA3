@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UserAddr">
+  <insert id="useraddr_in">
+    insert into tbl_useraddr2 values (bno_seq2.nextval, sysdate, #{useraddr}, #{username})
+  </insert>
+</mapper>
